@@ -437,7 +437,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -737,8 +737,8 @@ section {
 .services .title {
   margin-left: 80px;
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .services .title a {
