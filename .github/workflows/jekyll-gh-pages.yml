@@ -35,6 +35,14 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Add HTTP headers file
+        run: |
+          cat <<EOF > ./_site/_headers
+          /*
+            X-Frame-Options: DENY
+            X-Content-Type-Options: nosniff
+            X-XSS-Protection: 1; mode=block
+          EOF
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
